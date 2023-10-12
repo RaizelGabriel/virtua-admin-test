@@ -1,79 +1,52 @@
 /* Navbar.css */
 header {
-    background-color: #D9D9D9;
-    color: #100F0F;
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-  }
-  
-  .welcome-container {
-    background-color: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  .welcome {
-    font-family: "Sofia Sans", sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-  }
-  
-  .admin-box {
-    background-color: #4F709C; /* Set the background color of the blue box */
-    color: white; /* Set the text color to white */
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  nav {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  li {
-    margin: 0 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
-  }
+  background-color: #D9D9D9;
+  color: #100F0F;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
 
- /* Navbar.css */
+.welcome-container {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
-.button-column {
-    display: flex;
-    flex-direction: column; /* Arrange buttons in a column */
-    align-items: flex-start; /* Align buttons to the left side */
-    margin-top: 100px;
-    margin-left: 100px;
-  }
-  
-  .dashboard-button {
-    background-color: #4F709C;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    width: 300px; /* Set a fixed width for the button boxes */
-    height: 50px; /* Set a fixed height for the button boxes */
-    margin-bottom: 10px; /* Add margin between buttons */
-    cursor: pointer;
-  }
-  
-  .dashboard-button:last-child {
-    margin-bottom: 0; /* Remove margin from the last button */
-  }
-  
-  
+.welcome {
+  font-family: "Sofia Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.admin-box {
+  background-color: #4F709C; /* Set the background color of the blue box */
+  color: white; /* Set the text color to white */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
   

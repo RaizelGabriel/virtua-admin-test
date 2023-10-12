@@ -1,0 +1,36 @@
+.calendar-heading {
+    margin-top: 100px;
+    margin-right: 100px;
+    font-size: 1rem; /* Adjust the font size to match the calendar */
+    background-color: #E5D283;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.8rem 1.6rem; /* Adjust padding for a smaller size */
+    border-radius: 5px;
+    width: 100%; /* Make the heading width 100% to match the calendar */
+    font-family: 'Sofia Sans Condensed', sans-serif;
+  }
+  .calendar-container{
+    position: relative;
+    right: 1vw;
+    margin-top: auto;
+    margin-right: 100px;
+  }
+ 
+  .dashboard {
+      display: flex;
+    }
+    .dashboard > div:nth-child(1) {
+        padding: 20px;
+      }
+    @media (min-width: 768px) {
+        .dashboard {
+          justify-content: space-evenly; /* Display side by side on larger screens */
+        }
+        .dashboard > div:nth-child(1) {
+          order: 1; /* Reorder Admin to the left on larger screens */
+        }
+        .dashboard > div:nth-child(2) {
+          order: 2; /* Reorder CalendarComponent to the right on larger screens */
+        }
+      }
