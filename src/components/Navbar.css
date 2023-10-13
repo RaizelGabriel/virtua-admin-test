@@ -3,7 +3,8 @@ header {
   background-color: #D9D9D9;
   color: #100F0F;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Change to space-between to separate items */
+  align-items: center; /* Vertically center items */
   padding: 10px;
 }
 
@@ -21,8 +22,8 @@ header {
 }
 
 .admin-box {
-  background-color: #4F709C; /* Set the background color of the blue box */
-  color: white; /* Set the text color to white */
+  background-color: #4F709C;
+  color: white;
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -30,6 +31,9 @@ header {
 nav {
   background-color: #333;
   color: #fff;
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center; /* Horizontally center items on small screens */
 }
 
 ul {
@@ -49,4 +53,9 @@ a {
   color: #fff;
 }
 
-  
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+}
