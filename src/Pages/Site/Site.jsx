@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Site.css'; // Import your CSS file for styling
 import Calendar from 'react-calendar';
+import FAQ from './faq';
+import deleteIcon from './Delete.png'; // Import the delete icon image
 
 const Site = () => {
   const [headers, setHeaders] = useState([
@@ -30,10 +32,18 @@ const Site = () => {
     setEvents(updatedEvents);
   };
 
+  // Function for the button in the left column
+  const handleLeftColumnButtonClick = () => {
+    // Add your logic here for the button in the left column
+  };
+
   return (
     <div className="dashboard">
       <div className="left-column">
         <h1>Site Settings</h1>
+        <button onClick={handleLeftColumnButtonClick} className="left-column-button">
+          Update
+        </button>
         <div className="input-column">
           {headers.map((header, index) => (
             <div key={index}>
@@ -46,6 +56,7 @@ const Site = () => {
             </div>
           ))}
         </div>
+        <FAQ />
       </div>
       <div className="calendar-container">
         <div className='calendar-heading'>
@@ -72,7 +83,14 @@ const Site = () => {
             {events.map((event, index) => (
               <li key={index}>
                 {event}
-                <button onClick={() => deleteEvent(index)} className="delete-button">Delete</button>
+                <button onClick={() => deleteEvent(index)} className="delete-button">
+                  <img
+                    src={deleteIcon} // Use the imported delete icon
+                    alt="Delete Icon"
+                    onClick={() => deleteEvent(index)}
+                    className="delete-icon"
+                  />
+                </button>
               </li>
             ))}
           </ul>
